@@ -5,20 +5,35 @@
 # Convert the entire sentence to uppercase and print the result.
 # Find and print a substring from the inputted sentence.
 # Replace a word in the sentence and print the updated sentence.
-
+senetence = input("Enter a sentence: ")
+print(senetence[0])
+print(senetence[-1])
+print(senetence.upper())
+print(senetence[0:5])
+word = input("Enter word to replace. ")
+replacement = input("Enter replacement word. ")
+start = senetence.find(word)
+end = start + len(word)
+print(senetence[0:start] + replacement + senetence[end : len(senetence)])
 
 # Input Practice:
 
 # Create a Python program that asks the user for their name, age, and favorite movie.
 # Print a message back to the user with this information.
 # Note: Make sure to convert the age to an integer.
-
+name = input("What is your name? ")
+age = input("What is your age? ")
+movie = input("What is your favorite movie? ")
+print("Hello " + name + "! You are " + age + " years old and your favorite movie is ")
 
 # F-String Practice:
 
 # Create a Python program that asks the user for three objects in the room.
 # Create variables from these objects and insert those variables into an f-string sentence.
 # Print the f-string sentence.
+objects = input("Enter three objects in the room. ")
+object1 = 
+print(f"The objects in the room are {objects}")
 
 # Advanced String Practice:
 
